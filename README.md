@@ -1,17 +1,7 @@
 # PictureSelector 2.0 
    一款针对android平台下的图片选择器，支持从相册或拍照选择图片或视频、音频，支持动态权限获取、裁剪(单图or多图裁剪)、压缩、主题自定义配置等功能、适配android 6.0+系统的开源图片选择框架。<br>  
   
-  <br>项目会一直维护(有bug修复完成，一般周末会更新(不好意思，最近比较忙有时间会解决~有问题先提issue))，有bug请描述清楚，并请Issues会第一时间修复，个人QQ 893855882@qq.com  希望用得着的朋友点个star。 <br>
- Android开发交流 群一 619458861 (已满) <br> 
- Android开发交流 群二 679824206 (已满) <br> 
-   
-  [我的博客地址](http://blog.csdn.net/luck_mw) 
-  
-[![](https://jitpack.io/v/LuckSiege/PictureSelector.svg)](https://jitpack.io/#LuckSiege/PictureSelector)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/LuckSiege)
-[![CSDN](https://img.shields.io/twitter/url/http/blog.csdn.net/luck_mw.svg?style=social)](http://blog.csdn.net/luck_mw)
-[![I](https://img.shields.io/github/issues/LuckSiege/PictureSelector.svg)](https://github.com/LuckSiege/PictureSelector/issues)
-[![Star](https://img.shields.io/github/stars/LuckSiege/PictureSelector.svg)](https://github.com/LuckSiege/PictureSelector)
+
 
 ## 目录
 -[功能特点](#功能特点)<br>
@@ -73,7 +63,7 @@
 
 ```
 dependencies {
-    implementation 'com.github.aaa5849310.PictureSelector-master:picture_library:1.0.0'
+    implementation 'com.github.aaa5849310.PictureSelector-master:picture_library:v1.0.0'
 }
 
 ```
@@ -463,9 +453,7 @@ PictureSelector.create(MainActivity.this).externalPictureVideo(video_path);
 -keepresourcexmlelements manifest/application/meta-data@value=GlideModule
 
 ```
-## 打赏
-# ~如果您觉得好，对你有帮助，可以给我一点打赏当做鼓励，蚊子再小也是肉呀(*^__^*) 嘻嘻…… 
-![image](https://github.com/LuckSiege/PictureSelector/blob/master/image/apply.png)
+
 
 ## 兼容性测试
 ******腾讯优测-深度测试-通过率达到100%******
