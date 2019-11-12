@@ -1,4 +1,4 @@
-# PictureSelector 1.0.0
+# PictureSelector 1.0.2
    一款针对android平台下的图片选择器，支持从相册或拍照选择图片或视频、音频，支持动态权限获取、裁剪(单图or多图裁剪)、压缩、主题自定义配置等功能、适配android 6.0+系统的开源图片选择框架。<br>  
   
 
@@ -63,7 +63,7 @@
 
 ```
 dependencies {
-    implementation 'com.github.aaa5849310.PictureSelector-master:picture_library:v1.0.0'
+    implementation 'com.github.aaa5849310.PictureSelector-master:picture_library:v1.0.2'
 }
 
 ```
