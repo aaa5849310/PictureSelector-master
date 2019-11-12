@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/picture.checked.style"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="12sp" />
     </LinearLayout>
 
