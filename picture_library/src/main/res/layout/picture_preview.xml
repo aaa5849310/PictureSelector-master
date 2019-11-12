@@ -43,8 +43,8 @@
 
             <TextView
                 android:id="@+id/check"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:background="?attr/picture.checked.style"
                 android:gravity="center"
                 android:textColor="@color/black"
