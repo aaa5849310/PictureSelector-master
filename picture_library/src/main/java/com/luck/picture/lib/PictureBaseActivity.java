@@ -31,6 +31,7 @@ import com.luck.picture.lib.tools.DateUtils;
 import com.luck.picture.lib.tools.DoubleUtils;
 import com.luck.picture.lib.tools.PictureFileUtils;
 import com.luck.picture.lib.tools.SdkVersionUtils;
+import com.luck.picture.lib.widget.StatusBarLightMode;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropMulti;
 import com.yalantis.ucrop.util.BitmapUtils;
@@ -90,6 +91,7 @@ public class PictureBaseActivity extends FragmentActivity {
         } else {
             config = PictureSelectionConfig.getInstance();
         }
+        StatusBarLightMode.toggleStatusBarMode(this);
         int themeStyleId = config.themeStyleId;
         setTheme(themeStyleId);
         super.onCreate(savedInstanceState);

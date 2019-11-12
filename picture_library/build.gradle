@@ -33,4 +33,6 @@ dependencies {
     compile "com.github.bumptech.glide:glide:${cfgs.glide}"
     compile "io.reactivex.rxjava2:rxjava:${cfgs.rxjava}"
     compile "io.reactivex.rxjava2:rxandroid:${cfgs.rxandroid}"
+    //沉浸式标题栏
+    compile 'com.wuhenzhizao:titlebar:1.1.4'
 }
