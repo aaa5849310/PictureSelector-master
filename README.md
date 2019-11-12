@@ -63,7 +63,7 @@
 
 ```
 dependencies {
-    implementation 'com.github.aaa5849310.PictureSelector-master:picture_library:v1.0.2'
+    implementation 'com.github.aaa5849310.PictureSelector-master:picture_library:v1.0.3'
 }
 
 ```
