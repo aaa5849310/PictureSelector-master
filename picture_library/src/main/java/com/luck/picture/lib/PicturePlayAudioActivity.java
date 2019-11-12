@@ -4,11 +4,13 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.luck.picture.lib.tools.DateUtils;
+import com.wuhenzhizao.titlebar.statusbar.StatusBarUtils;
 
 
 public class PicturePlayAudioActivity extends PictureBaseActivity implements View.OnClickListener {
@@ -58,6 +60,9 @@ public class PicturePlayAudioActivity extends PictureBaseActivity implements Vie
             public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
+
+        Window window = this.getWindow();
+        StatusBarUtils.setDarkMode(window);
     }
 
     //  通过 Handler 更新 UI 上的组件状态

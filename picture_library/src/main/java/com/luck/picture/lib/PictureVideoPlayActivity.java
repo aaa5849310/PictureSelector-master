@@ -6,10 +6,13 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.wuhenzhizao.titlebar.statusbar.StatusBarUtils;
 
 public class PictureVideoPlayActivity extends PictureBaseActivity implements MediaPlayer.OnErrorListener, MediaPlayer.OnPreparedListener, MediaPlayer.OnCompletionListener, View.OnClickListener {
     private String video_path = "";
@@ -35,6 +38,9 @@ public class PictureVideoPlayActivity extends PictureBaseActivity implements Med
         mVideoView.setMediaController(mMediaController);
         picture_left_back.setOnClickListener(this);
         iv_play.setOnClickListener(this);
+
+        Window window = this.getWindow();
+        StatusBarUtils.setDarkMode(window);
     }
 
 

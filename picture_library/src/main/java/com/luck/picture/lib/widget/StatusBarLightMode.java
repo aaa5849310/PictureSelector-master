@@ -19,7 +19,7 @@ public class StatusBarLightMode {
         Window window = context.getWindow();
         if (window == null) return;
         StatusBarUtils.transparentStatusBar(window);
-        StatusBarUtils.setDarkMode(window);
+
     }
 
 }

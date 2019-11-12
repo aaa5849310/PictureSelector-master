@@ -13,6 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ import com.luck.picture.lib.widget.PreviewViewPager;
 import com.luck.picture.lib.widget.longimage.ImageSource;
 import com.luck.picture.lib.widget.longimage.ImageViewState;
 import com.luck.picture.lib.widget.longimage.SubsamplingScaleImageView;
+import com.wuhenzhizao.titlebar.statusbar.StatusBarUtils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -86,6 +88,9 @@ public class PictureExternalPreviewActivity extends PictureBaseActivity implemen
         images = (List<LocalMedia>) getIntent().getSerializableExtra(PictureConfig.EXTRA_PREVIEW_SELECT_LIST);
         left_back.setOnClickListener(this);
         initViewPageAdapterData();
+
+        Window window = this.getWindow();
+        StatusBarUtils.setDarkMode(window);
     }
 
     private void initViewPageAdapterData() {

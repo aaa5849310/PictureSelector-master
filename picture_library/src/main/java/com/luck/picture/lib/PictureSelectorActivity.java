@@ -16,6 +16,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SimpleItemAnimator;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -50,6 +51,7 @@ import com.luck.picture.lib.tools.StringUtils;
 import com.luck.picture.lib.tools.ToastManage;
 import com.luck.picture.lib.widget.FolderPopWindow;
 import com.luck.picture.lib.widget.PhotoPopupWindow;
+import com.wuhenzhizao.titlebar.statusbar.StatusBarUtils;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropMulti;
 import com.yalantis.ucrop.model.CutInfo;
@@ -183,6 +185,9 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
             setContentView(R.layout.picture_selector);
             initView(savedInstanceState);
         }
+
+        Window window = this.getWindow();
+        StatusBarUtils.setDarkMode(window);
     }
 
 

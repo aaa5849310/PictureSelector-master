@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
+import android.view.Window;
 
 import com.luck.picture.lib.compress.Luban;
 import com.luck.picture.lib.compress.OnCompressListener;
@@ -32,6 +33,7 @@ import com.luck.picture.lib.tools.DoubleUtils;
 import com.luck.picture.lib.tools.PictureFileUtils;
 import com.luck.picture.lib.tools.SdkVersionUtils;
 import com.luck.picture.lib.widget.StatusBarLightMode;
+import com.wuhenzhizao.titlebar.statusbar.StatusBarUtils;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropMulti;
 import com.yalantis.ucrop.util.BitmapUtils;
@@ -91,7 +93,6 @@ public class PictureBaseActivity extends FragmentActivity {
         } else {
             config = PictureSelectionConfig.getInstance();
         }
-        StatusBarLightMode.toggleStatusBarMode(this);
         int themeStyleId = config.themeStyleId;
         setTheme(themeStyleId);
         super.onCreate(savedInstanceState);
@@ -100,6 +101,8 @@ public class PictureBaseActivity extends FragmentActivity {
         if (isImmersive()) {
             immersive();
         }
+        Window window = this.getWindow();
+        StatusBarUtils.setDarkMode(window);
     }
 
     /**

@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -26,6 +27,7 @@ import com.luck.picture.lib.tools.ScreenUtils;
 import com.luck.picture.lib.tools.ToastManage;
 import com.luck.picture.lib.tools.VoiceUtils;
 import com.luck.picture.lib.widget.PreviewViewPager;
+import com.wuhenzhizao.titlebar.statusbar.StatusBarUtils;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropMulti;
 import com.yalantis.ucrop.model.CutInfo;
@@ -200,6 +202,9 @@ public class PicturePreviewActivity extends PictureBaseActivity implements
             public void onPageScrollStateChanged(int state) {
             }
         });
+
+        Window window = this.getWindow();
+        StatusBarUtils.setDarkMode(window);
     }
 
     /**
