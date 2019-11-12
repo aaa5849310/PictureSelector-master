@@ -33,8 +33,8 @@
 
         <LinearLayout
             android:id="@+id/ll_check"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:layout_alignParentRight="true"
             android:gravity="center"
             android:orientation="vertical"
@@ -43,8 +43,8 @@
 
             <TextView
                 android:id="@+id/check"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="?attr/picture.checked.style"
                 android:gravity="center"
                 android:textColor="@color/black"
