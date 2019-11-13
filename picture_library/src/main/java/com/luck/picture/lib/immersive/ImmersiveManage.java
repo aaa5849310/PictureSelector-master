@@ -98,8 +98,7 @@ public class ImmersiveManage {
                 }
 
                 window.setStatusBarColor(statusBarColor);
-                window.setNavigationBarColor(navigationBarColor);
-
+//                window.setNavigationBarColor(navigationBarColor);
             }
         } catch (Exception e) {
             e.printStackTrace();
